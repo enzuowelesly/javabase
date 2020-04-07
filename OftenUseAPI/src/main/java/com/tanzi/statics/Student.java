@@ -6,6 +6,9 @@ public class Student {
     private int age;
     static  String room ;
     private  static int idCounter =0;
+    static {
+        System.out.println("静态方法");
+    }
 
     public Student() {
     }
