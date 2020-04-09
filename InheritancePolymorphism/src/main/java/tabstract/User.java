@@ -1,6 +1,6 @@
 package tabstract;
 
-public class User {
+public abstract class User {
     String name;
     int money;
 
