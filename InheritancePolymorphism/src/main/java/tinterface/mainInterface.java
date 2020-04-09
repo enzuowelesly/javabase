@@ -9,5 +9,8 @@ public class mainInterface {
         myInterfaceimpl.defaultMethodOne();
         myInterfaceimpl.defaultMethodTwo();
         MyInterface.staticMethod();
+        int i = MyInterfaceimpl.num;
+        System.out.println(i);
+        System.out.println(MyInterface.num);
     }
 }
