@@ -11,6 +11,9 @@ public class useMain {
         Keyboard keyboard =new Keyboard();
 
         computer.usedevice(keyboard);
+        System.out.println("===============");
+        computer.usedevice(new Mouse());
+        computer.usedevice(new Keyboard());
 
         computer.powerOff();
     }
