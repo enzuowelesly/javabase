@@ -7,6 +7,7 @@ package tmulti;
 成员方法
 只能访问父类有的方法；
 运行的方法，看右边的 new 的对象， 子类有，则运行子类覆盖的方法，没有则向上查找
+2、对象的向上转型/对象的向下转型（instanceof）
 
 * */
 public class MainMethod {
@@ -21,6 +22,14 @@ public class MainMethod {
 //        person.showStudent();
         person.show();
         person.eat();
+        System.out.println("=================");
+        if ( person instanceof Student){
+            Student student =(Student)person;
+            student.showStudent();
+            student.eat();
+            student.show();
+            student.showage();
+        }
 
 
     }

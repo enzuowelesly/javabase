@@ -6,10 +6,11 @@ public class Student extends Person {
     public void show(){
         System.out.println("重写showmethod");
     }
-    public void showStudent(){
-        System.out.println("student show method");
-    }
+
     public void showage(){
         System.out.println("age is "+age);
+    }
+    public void showStudent(){
+        System.out.println("student show method");
     }
 }
