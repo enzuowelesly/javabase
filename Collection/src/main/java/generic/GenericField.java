@@ -15,13 +15,13 @@ public class GenericField {
         Collection<Object> array4 =new ArrayList<>();
 
         getUpField(array1);
-        getUpField(arrays2);
+        //getUpField(arrays2);
         getUpField(array3);
-        getUpField(array4);
+        //getUpField(array4);
 
 
-        getDownField(array1);
-        getDownField(arrays2);
+        //getDownField(array1);
+        //getDownField(arrays2);
         getDownField(array3);
         getDownField(array4);
     }
