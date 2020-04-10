@@ -9,4 +9,7 @@ public class Student extends Person {
     public void showStudent(){
         System.out.println("student show method");
     }
+    public void showage(){
+        System.out.println("age is "+age);
+    }
 }

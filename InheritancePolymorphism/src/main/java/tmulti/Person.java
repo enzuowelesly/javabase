@@ -9,4 +9,7 @@ public class Person {
     public void eat(){
         System.out.println("person eatmethod");
     }
+    public void showage(){
+        System.out.println("age is"+age);
+    }
 }

@@ -1,6 +1,6 @@
 package tmulti;
 /*
-1、父类引用指向子类对象
+1、父类引用指向子类对象===编译看左边，运行看右边
 成员变量
 直接访问成员变量，也是只能访问父类有的成员变量；
 间接访问，同成员方法，看 new 没有向上查找
@@ -12,14 +12,16 @@ package tmulti;
 public class MainMethod {
     public static void main(String[] args) {
         Person person =new Student();
+
+        System.out.println(person.age);
+        System.out.println("=================");
+        person.showage();
+        System.out.println("=================");
+
+//        person.showStudent();
         person.show();
         person.eat();
-        System.out.println(person.age);
 
-        System.out.println("=================");
-        Student student =new Student();
-        student.showStudent();
-        student.show();
 
     }
 }
