@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Collection/Collection.iml" filepath="$PROJECT_DIR$/Collection/Collection.iml" />
       <module fileurl="file://$PROJECT_DIR$/InheritancePolymorphism/InheritancePolymorphism.iml" filepath="$PROJECT_DIR$/InheritancePolymorphism/InheritancePolymorphism.iml" />
       <module fileurl="file://$PROJECT_DIR$/OftenUseAPI/OftenUseAPI.iml" filepath="$PROJECT_DIR$/OftenUseAPI/OftenUseAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/map/map.iml" filepath="$PROJECT_DIR$/map/map.iml" />
     </modules>
   </component>
 </project>

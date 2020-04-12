@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="OftenUseAPI" />
+        <module name="map" />
         <module name="InheritancePolymorphism" />
         <module name="Collection" />
       </profile>
@@ -14,6 +15,7 @@
     <bytecodeTargetLevel>
       <module name="Collection" target="8" />
       <module name="InheritancePolymorphism" target="8" />
+      <module name="map" target="1.5" />
       <module name="OftenUseAPI" target="1.5" />
     </bytecodeTargetLevel>
   </component>
