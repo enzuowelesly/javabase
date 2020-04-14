@@ -1,18 +1,56 @@
 package recursive;
 
 import java.io.File;
+import java.io.FileFilter;
+import java.io.FilenameFilter;
 
 public class RecurisiveFile {
     public static void main(String[] args) {
         File file=new File ("/Users/tanzi/Documents/uploads/2020/3/directoryoo/");
 //            reFile(file);
 //        reFileTwo(file);
-        fileFilter(file);
+//        fileFilter(file);
+//        fileFilterTwo(file);
+        fileFilterThree(file);
+
+    }
+    public static void fileFilterThree(final File file){
+        File[] files=file.listFiles(new FilenameFilter() {
+            public boolean accept(File dir, String name) {
+                return new File(file,name).isDirectory()||name.toLowerCase().endsWith(".jpeg");
+            }
+        });
+        for (File file1 : files) {
+            if (file1.isDirectory()) {
+                fileFilter(file1);
+            } else {
+
+                System.out.println(file1);
+            }
+        }
+    }
+
+    public static void fileFilterTwo(File file) {
+        File[] files = file.listFiles(new FileFilter() {
+            public boolean accept(File pathname) {
+                if (pathname.isDirectory()){
+                    return true;
+                }
+                return pathname.toString().toLowerCase().endsWith(".jpeg");
+            }
+        });
+        for (File file1 : files) {
+            if (file1.isDirectory()) {
+                fileFilter(file1);
+            } else {
+
+                System.out.println(file1);
+            }
+        }
     }
 
     public static void fileFilter(File file) {
         File[] files = file.listFiles(new FileFilterimpl());
-        //System.out.println(files);
         for (File file1 : files) {
             if (file1.isDirectory()) {
                 fileFilter(file1);
@@ -23,7 +61,6 @@ public class RecurisiveFile {
         }
     }
     public static void reFile(File file){
-        //System.out.println(file);
         File[] files= file.listFiles();
         for (File file1 : files) {
             if (file1.isDirectory()){
@@ -38,7 +75,6 @@ public class RecurisiveFile {
         }
     }
     public static void reFileTwo(File file){
-        //System.out.println(file);
         File[] files= file.listFiles();
         for (File file1 : files) {
             if (file1.isDirectory()){
