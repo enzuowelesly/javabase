@@ -32,13 +32,21 @@ public class OUTWriter {
 //            fileWriter.write(chars);
             fileWriter.write(chars,0,2);
             fileWriter.write(97);
-            fileWriter.write("\r");
-            fileWriter.write("javabase  java 输入输出IO");
+            for (int i = 0; i < 4; i++) {
+                fileWriter.write("\r");
+                fileWriter.write("javabase  java 输入输出IO");
+            }
+
         }catch(IOException e){
             System.out.println(e);
         }finally {
-            fileWriter.flush();
-            fileWriter.close();
+
+            try {
+                fileWriter.flush();
+                fileWriter.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
